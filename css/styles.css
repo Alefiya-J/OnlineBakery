@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+body{
+    font-family: "Montserrat";
+
+}
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    border:2px solid #80673C;
+}
+::-webkit-scrollbar-thumb{
+    background:#362810; 
+    border-radius: 4px;
+    
+}
+
+.active{
+    color:#80673C;
+}
+
+#title{
+    background:url(../images/bg3.jpg) rgba(0, 0, 0, 0.8) ;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    min-height: 100vh;
+    border-bottom: #80673C double 12px;
+    display: flex;
+}
+
+#title .container-fluid{
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1em 3em;
+}
+.navbar-brand{
+    font-family: "Dancing Script";
+    font-size:2.9em;
+    font-weight: bold;
+    color: #80673C !important;
+}
+
+i{
+    padding-right:0.4em;
+}
+
+.navbar{
+    padding: 0 0 4.5em;
+}
+
+.nav-item{
+    padding:0 18px;
+}
+
+.nav-link{
+    font-size: 1.2em;
+    font-family: "Montserrat-Light";
+}
+
+.banner{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    line-height: 1.5;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+h2{
+    font-family: "Montserrat-Black";
+    font-size: 2.5em;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 1.5em;
+    font-family: "Ubuntu";
+    font-weight: 400;
+}
+
+.banner span{
+    color:#80673C;
+    display: block;
+    /* font-family: "Dancing Script"; */
+}
+
+
+.banner .btn{
+    margin-top: 3%;
+    border-color: #80673C;
+    color: #80673C;
+}
+
+.banner .btn:hover{
+    color: #80673C;
+}
+
+.festive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.festive h1{
+    text-align: center;
+    font-family: "Dancing Script";
+    color: #80673C;
+    padding: 3em 2em;
+    font-size: 3em;
+    font-weight: 700;
+    flex: 3;
+    position: relative;
+}
+
+.festive h1::before{
+    content: "";
+    position: absolute;
+    top:calc(50% - 2em);
+    left:calc(50% - 2em);
+    border:2px solid #887b63;
+    height: 4em;
+    width: 4em;
+    /* transform-origin: center; */
+    animation: rotate 8s infinite linear;
+}
+
+.festive .carousel  {
+    flex: 7;
+}
+.festive .carousel .carousel-inner .carousel-item img{
+    height: 70vh;
+    object-fit: cover;
+}
+.about-us{
+    border-top: #80673C 12px double;
+    border-bottom: #80673C 12px double;
+    display: flex;
+    flex-direction: column;
+    background: url(../images/bg1.jpeg) rgba(0, 0, 0, 0.8);
+    background-blend-mode:multiply;
+    background-repeat:  no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 4% 5% ;
+}
+
+.about-us h1{
+    font-family: "Dancing Script";
+    color: #80673C;
+    text-align: center;
+    font-size: 4.5em;
+    padding: 2% 5%;
+    font-weight: 700;
+}
+
+.qualities{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color:#80673C;
+    padding: 5% 5% 2%;
+    font-size: 1.5em;
+}
+
+.quality{
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+}
+
+.quality i{
+    font-size: 2.5em;
+    margin-bottom: 5%;
+    text-align: center;
+
+}
+
+.quality p{
+    text-align: center;
+    font-weight: 700;
+    
+}
+.best{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3%;
+}
+
+.best h1{
+    text-align: center;
+    font-family: "Dancing Script";
+    color: #80673C;
+    padding: 2% 2%;
+    font-size: 3.5em;
+    font-weight: 700;
+
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 30px;
+    gap: 2em 3em;
+    justify-content: center;
+}
+
+.product{
+    width:250px;
+    transition: all 0.2s linear;
+}
+
+.product:hover{
+    transform:scale(0.96);
+}
+
+.product-img{
+    border-radius: 10px;
+    overflow:hidden;
+    margin-bottom: 0.5em;
+    height: 225px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.product-img img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.product-details{
+    display:flex;
+    justify-content: space-between;
+}
+
+.product-name{
+    font-size:1.125em;
+    font-weight: 700;
+    flex:7;
+}
+
+.product-price{
+    justify-self: flex-end;
+}
+
+#footer{
+    border-top: #80673C double 10px;
+    text-align: center;
+    padding:3% 7% 2%;
+    background:url(../images/bg2.jpg) rgba(0, 0, 0, 0.9);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: top;
+    color:white;
+    
+}
+
+.details{
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 3%;
+  
+}
+.social h1{
+    font-family: "Dancing Script";
+    color: #80673C;
+    font-size: 3.5em;
+    margin-bottom: 2%;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-top: 1.5em;
+}
+
+.social i{
+    font-size: 1.5em;
+    padding: 1% 2%;
+    color: #80673C;
+}
+
+.contacts{
+    display: flex;
+    flex-wrap: wrap;
+    gap:3em 7em;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 3% 0;
+}
+
+.contact i{
+    color: #80673C;
+    font-size: 1.7em;
+}
+.contact h3{
+    color: #80673C;
+    font-size: 1.7em;
+    font-family: "Ubuntu";
+}
+ #footer .contact p{
+    font-size:1.5em;
+}
+
+#footer .contact a ,#footer .social a{
+    font-size:1.2em;
+    color: white;
+    text-decoration: none;
+}
+#footer .contact a:hover , #footer .social a:hover{
+    color:#80673C;
+}
+
+#footer p{
+    margin: 0;
+    font-size: 0.8em;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 600px ){
+    #title{
+        text-align: center;
+        min-height: 65vh;
+    }
+
+
+    .navbar{
+        padding: 0 0 2.5em;
+    }
+    .navbar-brand{
+        font-size: 2em;
+    }
+    .banner h1 {
+        font-size: 1.75em;
+    }
+    .banner h3 {
+        font-size: 1em;
+    }
+    .banner .btn {
+        font-size: 1em;
+    }
+    .festive {
+        flex-direction: column;
+    }
+    .festive h1  {
+        flex: 1;
+        padding: 1.5em;
+        font-size: 2.5em;
+    }
+    .festive h1::before{
+        top:calc(50% - 1.5em);
+        left:calc(50% - 1.5em);
+        height: 3em;
+        width: 3em;
+    }
+    .festive .carousel  {
+        flex: 1;
+    }
+    .festive .carousel .carousel-inner .carousel-item img{
+        height: 45vh;
+    }
+    .about-us h1, .best h1 {
+        font-size: 2.5em;
+    }
+    .quality i{
+        font-size: 1.5em;
+    
+    }
+    
+    .quality p {
+        font-size: 1em;
+    }
+    .products{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .social h1 {
+        font-size: 2.5em;
+    }
+    #footer p{
+        margin-top: 4%;
+        font-size: 0.6em;
+    }
+    #footer .contact a ,#footer .social a{
+        font-size: 1em;
+    }
+}
+
